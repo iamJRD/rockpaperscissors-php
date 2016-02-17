@@ -1,7 +1,7 @@
 1. rock vs scissors -> rock wins
-
+    DONE
 2. scissors vs paper -> scissors wins
-
+    DONE
 3. paper vs rock -> paper wins
 
 4. PvP || RvR || SvS -> draw
