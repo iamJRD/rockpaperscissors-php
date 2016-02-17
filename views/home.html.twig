@@ -17,27 +17,30 @@
         <form action="/game_results" method="get">
             <div class="form-group">
                 <h4>Player 1</h4>
-            <select class="form-control">
-              <option>Choose your weapon</option>
-              <option>Rock</option>
-              <option>Paper</option>
-              <option>Scissors</option>
+            <select class="form-control" name="player1" required>
+              <option value="" disabled selected>Choose your weapon</option>
+              <option name="player1" value="rock">Rock</option>
+              <option name="player1" value="paper">Paper</option>
+              <option name="player1" value="scissors">Scissors</option>
 
             </select>
         </div>
         <div class="form-group">
-            <select class="form-control">
-                <option>Choose your weapon</option>
-                <option>Rock</option>
-                <option>Paper</option>
-                <option>Scissors</option>
+            <h4>Player 2</h4>
+            <select class="form-control" name="player2" required>
+                <option value="" disabled selected>Choose your weapon</option>
+                <option name="player2" value="rock">Rock</option>
+                <option name="player2" value="paper">Paper</option>
+                <option name="player2" value="scissors">Scissors</option>
             </select>
             </div>
-
-        <button class="btn btn-info" type="submit">Submit</button>
+        <button class="btn btn-info" type="submit">GO</button>
         </form>
         </div>
-    </div>
+        <div class="col-md-6">
+            <h1>{{ rungame }} wins!<h1>
+        </div>
+        </div>
     </div>
 </body>
 </html>

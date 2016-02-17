@@ -1,5 +1,30 @@
 <?php
     class RockPaperScissors {
+        // private $player1;
+        // private $player2;
+        //
+        // function __construct($new_player1, $new_player2)
+        // {
+        //     $this->player1 = $new_player1;
+        //     $this->player2 = $new_player2;
+        // }
+        //
+        // function setPlayer1($new_player1){
+        //     $this->player1 = $new_player1;
+        // }
+        //
+        // function setPlayer2($new_player2) {
+        //     $this->player2 = $new_player2;
+        //
+        // }
+        //
+        // function getPlayer1(){
+        //     return $this->player1;
+        // }
+        //
+        // function getPlayer2(){
+        //     return $this->player2;
+        // }
 
         function playGame($player1, $player2)
         {

@@ -13,6 +13,15 @@
         return $app["twig"]->render("home.html.twig");
     });
 
+    $app->get("/game_results", function() use ($app) {
+        $player1 = $_GET['player1'];
+        $player2 = $_GET['player2'];
+
+        $newGame = new RockPaperScissors();
+        $result = $newGame->playGame($player1, $player2);
+        return $app["twig"]->render("home.html.twig", array('rungame' => $result));
+    });
+
 
     return $app;
 ?>
