@@ -1,6 +1,5 @@
 <html>
 <head>
-    <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -14,7 +13,18 @@
             <div class="col-md-6">
                 <h1>ROCK PAPER SCISSORS</h1>
 
-                <a href="/player1"><button class="btn btn-info" type="submit">Start Game!</button></a>
+                <form action="/player1" method="post">
+                    <div class="form-group">
+                        <h4>Player 1</h4>
+                        <select class="form-control" name="player1" required>
+                            <option value="" disabled selected>Choose your weapon</option>
+                            <option name="player1" value="rock">Rock</option>
+                            <option name="player1" value="paper">Paper</option>
+                            <option name="player1" value="scissors">Scissors</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-info" type="submit">GO</button>
+                </form>
             </div>
         </div>
     </div>

@@ -1,11 +1,11 @@
 <?php
     class RockPaperScissors {
-        
+
         function playGame($player1, $player2)
         {
             $player1winner = "Player 1";
             $player2winner = "Player 2";
-            $draw = "Draw";
+            $draw = "No Winner - Draw";
 
             if ($player1 == $player2) {
                 return $draw;
@@ -37,6 +37,12 @@
             else {
                 echo "Stuff is messed up!";
             }
+        }
+
+        static function newGame()
+        {
+            $_SESSION['player1'] = array();
+            $_SESSION['player2'] = array();
         }
     }
 ?>
